@@ -16,11 +16,5 @@ public class LinkedListClient{
 		System.out.println("The list is full: " + list);
 		System.out.println();
 
-		int nov = list.numberOfValues(3);
-		for (int i = 0; i < nov; i++) {
-			list.removeLast(3);
-			System.out.println(list);
-		}
-
 	}
 }

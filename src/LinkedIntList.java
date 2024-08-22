@@ -13,39 +13,12 @@ public class LinkedIntList {
     }
 
     //removeLast method
-    public void removeLast(int value){
-        if (front != null) {
-            ListNode current = front;
-            ListNode spot = null;
-            while (current.next != null) {
-                if (current.next.data == value) {
-                    spot = current;
-                }
-                current = current.next;
-            }
-            if (spot != null) {
-                spot.next = spot.next.next;
-            } else {
-                if (front.data == value) {
-                    front = front.next;
-                }
-            }
-        }
-    }
+
 
 
     //Returns the number of searched values
-    public int numberOfValues(int value){
-        ListNode current = front;
-        int count = 0;
-        while (current != null){
-            if (current.data == value) {
-                count++;
-            }
-            current = current.next;
-        }
-        return count;
-    }
+
+
 
 
     // post: returns the current number of elements in the list
